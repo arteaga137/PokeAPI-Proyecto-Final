@@ -1,0 +1,172 @@
+/* Base Styles
+------------------------------------------------- */
+body {
+  background-color: rgb(255, 255, 255);
+  margin: 0;
+  font-family: 'Rubik', sans-serif;
+  color: red;
+}
+
+/* Layout Containers
+------------------------------------------------- */
+.container {
+  padding: 40px;
+  margin: 0 auto;
+}
+
+.controls-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Typography
+------------------------------------------------- */
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 54px;
+}
+
+/* Pokémon Card Styles
+------------------------------------------------- */
+.card {
+  list-style: none;
+  padding: 20px;
+  background-color: #d30941; /* Pokédex red */
+  color: #fff;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  transition: transform 0.5s;
+}
+
+.card-image {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+.card-title {
+  text-transform: uppercase;
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.card-subtitle {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.pokemon-number {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border-radius: 50%;
+  font-size: 14px;
+  font-weight: bold;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Buttons and Interactions
+------------------------------------------------- */
+.show-shiny {
+  padding: 5px 10px;
+  background-color: #fff;
+  color: #000000;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.show-shiny:active {
+  transform: scale(0.95);
+  background-color: #e0e0e0;
+}
+
+/* Grid Layout for Pokémon List
+------------------------------------------------- */
+#pokedex {
+  padding-inline-start: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-gap: 20px;
+}
+
+/* Type Bubbles and Colors
+------------------------------------------------- */
+.type-bubble {
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  border-radius: 10px;
+  color: white;
+  margin-right: 5px;
+  font-size: 14px;
+  border: 1px solid black;
+}
+
+/* Define specific colors for each type */
+.type-normal { background-color: #a5a5a4ff; }
+.type-fire { background-color: #bf403a; }
+.type-fighting { background-color: #c6703b; }
+.type-water { background-color: #549bd3; }
+.type-flying { background-color: #4b65af; }
+.type-grass { background-color: #52a83a; }
+.type-poison { background-color: #7d56a1; }
+.type-electric {
+  background-color: #f2d152;
+  color: black; }
+.type-ground { background-color: #947845; }
+.type-psychic { background-color: #bf5a98; }
+.type-rock { background-color: #845c39; }
+.type-ice { background-color: #72acc2; }
+.type-bug { background-color: #699936; }
+.type-dragon { background-color: #51a595; }
+.type-ghost { background-color: #9c71b1; }
+.type-fairy { background-color: #dab0d4; }
+
+/* Search and Filter Inputs
+------------------------------------------------- */
+#searchBox,
+.filter-container select {
+  border: 2px solid #ddd;
+  border-radius: 20px;
+  padding: 5px 10px;
+  font-family: 'Rubik', sans-serif;
+  font-size: 1rem;
+  outline: none;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  text-align: center;
+}
+
+#searchBox:focus,
+.filter-container select:focus {
+  border-color: #aaa;
+}
+
+/* Additional Styles for Filter Dropdown */
+filter-container option {
+  padding: 5px;
+  background-color: white;
+  color: black;
+}

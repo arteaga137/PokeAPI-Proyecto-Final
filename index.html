@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container">
+        <h1>Pokédex</h1>
+        <div class="controls-container">
+
+            <div class="filter-container">
+                <select id="typeFilter">
+                    <option value="">All types</option>
+                    <option value="grass">Grass</option>
+                    <option value="poison">Poison</option>
+                    <option value="fire">Fire</option>
+                    <option value="water">Water</option>
+                    <option value="flying">Flying</option>
+                    <option value="rock">Rock</option>
+                    <option value="ground">Ground</option>
+                    <option value="fighting">Fighting</option>
+                    <option value="fairy">Fairy</option>
+                    <option value="dragon">Dragon</option>
+                    <option value="bug">Bug</option>
+                    <option value="electric">Electric</option>
+                    <option value="normal">Normal</option>
+                    <option value="ice">Ice</option>
+                    <option value="psychic">Psychic</option>
+                    <option value="ghost">Ghost</option>
+                </select>
+            </div>
+            <div class="search-container">
+                <input type="text" id="searchBox" placeholder="Search Pokémon...">
+            </div> 
+        </div>
+            <ol id="pokedex"></ol>
+    </div>
+    <script src="./pokedex.js"></script>
+</body>
+
+</html>
