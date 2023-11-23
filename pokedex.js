@@ -29,7 +29,7 @@ async function fetchPokemonData() {
       } 
 
       const speciesData = await speciesResponse.json(); // Convert species response to JSON
-console.log(speciesData) // ERASE LATER. Consolelog to check where the description is.
+// console.log(speciesData) // ERASE LATER. Consolelog to check where the description is.
       // Find English description from Pokémon Red version
       const englishFlavorText = speciesData.flavor_text_entries.find(entry => 
         entry.language.name === 'en' && entry.version.name === 'red');
